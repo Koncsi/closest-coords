@@ -11,6 +11,7 @@ def euclidean_dist(coord1: list, coord2: list):
 
     return math.sqrt(summ)
 
+
 def closest_coords(target_file):
     data = read_data(target_file)
 

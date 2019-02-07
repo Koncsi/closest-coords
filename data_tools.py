@@ -38,3 +38,5 @@ class DataGenerator(object):
                 coords = _random_coords(coord_dims)
                 coords = floatlist_to_string(coords, round_to_int=False) + '\n'
                 file.write(coords)
+
+        return file_name
