@@ -31,7 +31,7 @@ You can test for sample size increase or coordinate dimension increase.
 
 ## Summary
 
-The program have three main parts. The data reading, the distance function and the search algorithm.Additionally, I created a simple benchmark and a data generator class to show the weakness of the current implementation.
+The program have three main parts. The data reading, the distance function and the search algorithm. Additionally, I created a simple benchmark and a data generator class to show the weakness of the current implementation.
 
 The data reader function is a simple one thread implementation with the built-in tools.
 
@@ -39,7 +39,7 @@ The Eucledian distance function iteration through the given coordinates. The run
 
 The search algorithm compares each coordinate to every other coordinate. It means that in theory the running time of the algorithm is _O(n**2)_ where _n_ is the number of the coordinates.
 
-To check the theoretical assumptions, I created the data generator and the benchmarks.
+To check the theoretical assumptions, I created a data generator and the benchmarks.
 
 With an _O(n**2)_ algorithm the program can only work with fewer sample size. To address that issue, we can use for example Numba, to optimize our algorithm for more efficient hardware usage. Or we have to come up with a totally different approach. Problems like this can be "easily" fit to a GPU. 
 
