@@ -1,7 +1,8 @@
 import argparse
 import math
 
-from data_tools import read_data, floatlist_to_string
+from data_tools import read_data
+from utils import floatlist_to_string
 
 
 def euclidean_dist(coord1: list, coord2: list):
